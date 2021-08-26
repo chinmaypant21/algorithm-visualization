@@ -27,7 +27,7 @@ MergeSort.prototype.updateView = async function(start, sortedArr){
     let sortContainer = container.querySelector(".pp-array-view");
     console.log(container, "container");
     console.log(sortedArr);
-    console.log(this.array, "this.array")
+    console.log(this.array, "this.array");
     let maxHeight = 300;
 
     let action_speed = [];
