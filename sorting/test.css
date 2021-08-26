@@ -3,5 +3,26 @@
 }
 
 .pp-array-size{
-    width: 340px;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    width: 300px;
+    height: 8px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(167, 204, 204),rgb(19, 123, 141));
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.pp-array-size::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background:rgb(26, 92, 167);
+    cursor: pointer;
+}
+
+.pp-array-size:hover{
+    /* background:transparent; */
+    background-image: linear-gradient(to right, rgb(162, 192, 231),rgb(199, 48, 131));
 }
