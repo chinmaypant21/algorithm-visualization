@@ -14,8 +14,8 @@ Use link [https://cdn.jsdelivr.net/gh/paprajapati9/algorithm-visualization@maste
     * Depth First Search
 3. [Backtracking](https://paprajapati9.github.io/algorithm-visualization/backtracking/test.html)
     * Sudoku
-4. [Sorting](https://paprajapati9.github.io/algorithm-visualization/sorting/test.html)
-    * Mergesort
+4. [Sorting](https://paprajapati9.github.io/algorithm-visualization/sorting/test.html) 
+    * Mergesort: https://chinmaypant21.github.io/algorithm-visualization/sorting/test.html (Modified)
 5. [Greedy](https://paprajapati9.github.io/algorithm-visualization/greedy/test.html)
     * Graph Coloring (In Progress)
 
