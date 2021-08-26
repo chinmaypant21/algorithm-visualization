@@ -5,17 +5,26 @@
 }
 
 .pp-array-element{
-    background: yellow;
-    border: 1px solid darkgoldenrod;
+    background-image: linear-gradient(to bottom,rgb(134, 191, 255),rgb(54, 94, 168));
+    /* border:5px solid black; */
+    margin:0 3px;
 }
 
-.pp-active-sort-elment{
-    animation: blinker 0.2s linear;
+.pp-active-sort-elment-fast{
+    animation: blinker 0.1s linear;
+}
+
+.pp-active-sort-elment-medium{
+    animation: blinker 0.4s linear;
+}
+
+.pp-active-sort-elment-slow{
+    animation: blinker 0.8s linear;
 }
 
 @keyframes blinker {
     50% {
-      background: green;
+      background: rgb(65, 211, 121);
     }
 }
  
