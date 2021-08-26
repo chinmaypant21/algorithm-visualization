@@ -16,7 +16,8 @@ const solveSort = async (selector, options) => {
 function MergeSort(selector, options){
     this.array = options.array;
     this.selector = selector;
-    this.speed = options.speed;    /**/
+    this.speed = options.speed;/**/
+    // this.size = options.size;    
     this.i = 0;
     console.log(this.array, "this.array");
 }
