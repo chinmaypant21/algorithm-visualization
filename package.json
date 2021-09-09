@@ -9,8 +9,8 @@
   "author": "Pankaj Prajapati",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.13.8",
-    "@babel/preset-env": "^7.13.9",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "babel": "^6.23.0",
     "babel-preset-es2015-rollup": "^3.0.0",
     "core-js": "^3.9.1",

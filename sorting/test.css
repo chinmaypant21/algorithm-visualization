@@ -3,7 +3,7 @@
 }
 
 .pp-array-size{
-    -webkit-appearance: none;  /* Override default CSS styles */
+    -webkit-appearance: none; 
     width: 300px;
     height: 8px;
     border-radius: 10px;
@@ -25,4 +25,14 @@
 .pp-array-size:hover{
     /* background:transparent; */
     background-image: linear-gradient(to right, rgb(162, 192, 231),rgb(199, 48, 131));
+}
+
+.pp-array-size-container{
+    width: 340px;
+    cursor: pointer;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: max-content;
+    grid-gap: 10px;
 }
