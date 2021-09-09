@@ -13,13 +13,13 @@
 <body>
     <div id="pp-algoviz-selector" class="pp-algoviz-dashboard">
         <div class="pp-viz-navabar">
-            <h2>Sorting Visualization</h2>
+            <h2 id='nav-heading'>Merge Sort <span style="color:rgb(250, 71, 175); font-size:40px;">V</span>isualization</h2>
             <form class="pp-form">
                 <div class="pp-form-row">
-                    <button type="submit">Visualize</button>
+                    <button type="submit">Go</button>
                 </div>
                 <div class="pp-form-row pp-split-2-column">
-                    <label>Viz Speed</label>
+                    <label>Speed</label>
                     <select class="pp-form-select pp-viz-speed" aria-label="Viz Speed">
                         <option value="fast" >Fast</option>
                         <option value="medium" >Medium</option>
@@ -30,12 +30,24 @@
         </div>
         <div id="pp-sorting-container" class="pp-sorting-container">
         </div>
-        <!-- <div>
-            <input class="pp-array-size" type="range" min="2" max="65" value="30" step="1">
-        </div> -->
-        <div class="pp-array-size-container">
-            <div>Array Size : </div>
-            <input class="pp-array-size" type="range" min="3" max="100" value="30" step="1">
+        <div class="range-value-container">
+            <span id="range-value">15</span>
+        </div>
+        <div>
+            <input class="pp-array-size" id='rangeSlider' type="range" min="5" max="65" value="15" step="1" onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">            
+            <script type="text/javascript">
+                const rangeValue = document.getElementById('range-value');
+                const rangeSlider = document.getElementById('rangeSlider');
+                function rangeSlide(value){
+                    rangeValue.innerHTML= value;
+                    var bulletPosition = (rangeSlider.value)/(rangeSlider.max);
+                   rangeValue.style.left = -165+(bulletPosition*310) + "px";
+                    rangeValue.classList.add('show');
+                }
+                rangeSlider.onblur = (() => {
+                    rangeValue.classList.remove('show');
+                });
+            </script>
         </div>
     </div>
     <script src="test.js"></script>

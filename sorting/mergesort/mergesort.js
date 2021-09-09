@@ -17,7 +17,6 @@ function MergeSort(selector, options){
     this.array = options.array;
     this.selector = selector;
     this.speed = options.speed;/**/
-    // this.size = options.size;    
     this.i = 0;
     console.log(this.array, "this.array");
 }
@@ -56,7 +55,7 @@ MergeSort.prototype.updateView = async function(start, sortedArr){
         if(el1 != el2){
             el1.style.height = (sortedArr[i]/this.array.length)*maxHeight+'px';
             el2.style.height = (value1/this.array.length)*maxHeight+'px';
-
+          
             /**/
             el1.classList.add(action_speed[0]);    
             el2.classList.add(action_speed[0]);

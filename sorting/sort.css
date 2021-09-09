@@ -5,8 +5,9 @@
 }
 
 .pp-array-element{
-    background-image: linear-gradient(to bottom,rgb(134, 191, 255),rgb(54, 94, 168));
-    /* border:5px solid black; */
+    background-image: linear-gradient(46deg,#633bb1,#ff7e9c);
+    box-shadow: -3px 3px 4px 0.5px rgb(101 101 101 / 51%);
+    border-radius: 0 0 4px 4px;
     margin:0 3px;
 }
 
@@ -28,7 +29,7 @@
 
 @keyframes blinker {
     50% {
-      background: rgb(65, 211, 121);
+        background: rgb(65, 211, 121);
     }
 }
  
